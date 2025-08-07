@@ -18,6 +18,7 @@ Keypoints: 15 facial landmarks with (x,y) coordinates
 Model Architecture
 The solution uses a Convolutional Neural Network with the following architecture:
 Input: 96x96x1 grayscale images
+
 ├── Conv2D(64) + BatchNorm + ReLU + MaxPool2D
 
 ├── Conv2D(128) + Dropout(0.3) + BatchNorm + ReLU + MaxPool2D
