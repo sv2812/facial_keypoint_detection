@@ -19,12 +19,19 @@ Model Architecture
 The solution uses a Convolutional Neural Network with the following architecture:
 Input: 96x96x1 grayscale images
 ├── Conv2D(64) + BatchNorm + ReLU + MaxPool2D
+
 ├── Conv2D(128) + Dropout(0.3) + BatchNorm + ReLU + MaxPool2D
+
 ├── Conv2D(256) + Dropout(0.3) + BatchNorm + ReLU + MaxPool2D
+
 ├── Conv2D(512) + Dropout(0.3) + BatchNorm + ReLU + MaxPool2D
+
 ├── Conv2D(1024) + Dropout(0.3) + BatchNorm + ReLU + MaxPool2D
+
 ├── Flatten
+
 ├── Linear(1024 → 512) + Dropout(0.3) + BatchNorm1D + ReLU
+
 └── Linear(512 → 30)  # 30 output coordinates
 
 Key Features:
